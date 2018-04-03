@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Viewsys</string>
+
+    <!-- Error messages -->
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+
+
+    <string name="client_id_txt">CLIENT ID </string>
+    <string name="stb_id_txt">STB ID </string>
+    <string name="client_id_hint_txt">client id</string>
+    <string name="stb_id_hint_txt">stb id</string>
+    <string name="address_txt">Address :</string>
+    <string name="locality_city_state_txt">Locality/ City/ State :</string>
+    <string name="contact_person_txt">Contact Person :</string>
+    <string name="contact_no_txt">Contact No :</string>
+    <string name="ok_txt">OK</string>
+    <string name="connect_txt">Connect</string>
+
+
+    <string name="ui_no_client_id">CLIENT ID can not be empty.</string>
+    <string name="ui_no_stb_id">STB ID can not be empty.</string>
+    <string name="ui_changed_client_id">CLIENT ID is changed, Validate it.</string>
+    <string name="ui_changed_stb_id">STB ID is changed, Validate it.</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="msg_server_error">Oops! No goodies for you. Try again later</string>
+    <string name="msg_service_error">Service Failed</string>
+
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+
+    <string name="loc_city_state_txt">%1$s, %2$s (%3$s)</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+
+
+
+    <string name="directory">Directory</string>
+    <string name="file">File</string>
+    <string name="leave_warning_gc_txt">Content is not updated yet. Are you sure you want to leave ?</string>
+    <string name="leave_warning_config_txt">STB is not configured yet. Are you sure you want to leave ?</string>
+    <string name="txt_yes">YES</string>
+    <string name="txt_no">NO</string>
+    <string name="txt_cancel">CANCEL</string>
+    <string name="txt_retry">RETRY</string>
+    <string name="txt_choose_source">Choose Content Source</string>
+    <string name="txt_retry_to_config">Device is not configured. Please retry</string>
+    <string name="txt_msg_downloading">Downloading file. Please wait...</string>
+    <string name="txt_usb_feature_not_found">Device can not read pen drive</string>
+    <string name="txt_choose_device">Select device</string>
+    <string name="txt_no_device_found">no device connected.</string>
+    <string name="txt_msg_copying">Copying files, this can take some time!</string>
+    <string name="txt_read_permission_denial">can not read device without permission</string>
+    <string name="txt_no_content">content not found</string>
+    <string name="txt_update_unsuccessful">Content not updated.</string>
+    <string name="txt_initialization_failed">Device is not initialized. So can not read content.</string>
+    <string name="txt_expiry_msg">Please contact admin, you need to resubscribe.</string>
+    <string name="txt_title_permission_req">Permissions Needed</string>
+    <string name="txt_device_expired">Your device is expired Please Contact admin.</string>
+    <string name="version_code_txt">Version Code: %1$s</string>
+    <string name="location_id_txt">Location Id: %1$s</string>
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <LinearLayout
+        android:id="@+id/llStb"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="90dp"
+
+                android:layout_height="wrap_content"
+                android:text="@string/client_id_txt"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/colorBlue"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/colorBlue"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:id="@+id/edtClientId"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="2.4"
+                android:background="@drawable/edt_back"
+                android:hint="@string/client_id_hint_txt"
+                android:padding="6dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorBlue"
+                android:textSize="@dimen/text_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="@string/stb_id_txt"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/colorBlue"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/colorBlue"
+                android:layout_weight="0.1"/>
+            <EditText
+                android:id="@+id/edtStbId"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="2.4"
+                android:background="@drawable/edt_back"
+                android:hint="@string/stb_id_hint_txt"
+                android:maxLength="19"
+                android:padding="6dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorBlue"
+                android:textSize="@dimen/text_title_size" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_content_margin"
+            android:text="@string/ok_txt"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_content_margin"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/lblAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="@string/address_txt"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/lb_tv_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="Address "
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_title_size"
+                app:layout_constraintLeft_toRightOf="@+id/lblLocality"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/lblLocality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="@string/locality_city_state_txt"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/lb_tv_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddress"/>
+
+            <TextView
+                android:id="@+id/txtLocality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="Locality/ City/ State "
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toRightOf="@+id/lblLocality"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddress"/>
+
+
+            <TextView
+                android:id="@+id/lblContactPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="@string/contact_person_txt"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/lb_tv_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLocality"/>
+
+            <TextView
+                android:id="@+id/txtContactPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="Contact Person"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toRightOf="@+id/lblLocality"
+                app:layout_constraintTop_toBottomOf="@+id/txtLocality"/>
+
+
+            <TextView
+                android:id="@+id/lblContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="@string/contact_no_txt"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/lb_tv_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtContactPerson"/>
+
+            <TextView
+                android:id="@+id/txtContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_content_margin"
+                android:text="Contact No"
+                android:textSize="@dimen/text_title_size"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toRightOf="@+id/lblLocality"
+                app:layout_constraintTop_toBottomOf="@+id/txtContactPerson"/>
+
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/connect_txt"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtContactNo"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateDrawable="@drawable/progressbar_custom"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="Theme.Example.Leanback" parent="Theme.Leanback">
+
+    </style>
+</resources>

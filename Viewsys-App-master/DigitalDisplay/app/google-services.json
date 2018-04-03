@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "343049209410",
+    "firebase_url": "https://digital-display-188006.firebaseio.com",
+    "project_id": "digital-display-188006",
+    "storage_bucket": "digital-display-188006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343049209410:android:2c818cd0712372c0",
+        "android_client_info": {
+          "package_name": "com.kmsg.digitaldisplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343049209410-32d1s5intb3hhljndoi5rmih39kip4lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Z-MqOl2JIW3j6VH7uQTLsNG73BKCGZ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Viewsys Controller</string>
+    <string name="txt_title_permission_req">Permissions Needed</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="ok_txt">OK</string>
+    <string name="version_code_txt">Version Code: %1$s</string>
+
+</resources>
